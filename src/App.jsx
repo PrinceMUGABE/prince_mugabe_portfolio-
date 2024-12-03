@@ -1,27 +1,39 @@
-// src/App.js
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Home from "./components/Home";  // Import Home component
-import Footer from "./components/Footer";
-import './styles/main.css';
+// eslint-disable-next-line no-unused-vars
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-function App() {
+
+
+// Imports
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainLayout from "./components/Main_Layout";
+
+
+
+const App = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 800,
+      easing: "ease-in",
+      delay: 100,
+    });
+
+    AOS.refresh();
+  }, []);
+
   return (
-    <Router>
-      <Header />
-      <Routes>
-        {/* Route for the homepage */}
-        <Route path="/" element={<Home />} />
-        
-        {/* Other routes */}
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
+      <BrowserRouter>
+        <Routes>
+          {/* Home view */}
+          <Route path="/" element={<MainLayout />} />
+          
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
-}
+};
 
 export default App;
