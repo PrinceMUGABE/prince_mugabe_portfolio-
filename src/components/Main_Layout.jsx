@@ -28,7 +28,7 @@ const MainLayout = () => {
       <Hero />
     
       <Skills />
-      {/* <Services /> */}
+      <Services />
       <Projects />
       <Footer />
 

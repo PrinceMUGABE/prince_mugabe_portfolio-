@@ -4,7 +4,7 @@ import hero from "../../assets/pictures/prince2.PNG";
 const Hero = () => {
   return (
     <div
-      className="hero-section"
+      id="home" className="hero-section"
       style={{
         backgroundImage: `url(${hero})`,
         backgroundSize: "cover",
