@@ -38,7 +38,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-1/2 h-full bg-gradient-to-r from-sky-700 to-sky-900 bg-opacity-95 flex flex-col justify-center items-center transition-transform duration-300 ${
+        className={`fixed top-0 left-0 w-1/2 h-full bg-gradient-to-r from-sky-700 to-sky-900 bg-opacity-95 flex flex-col items-start p-6 transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } z-40`}
       >
@@ -53,7 +53,7 @@ const Header = () => {
         </button>
 
         {/* Mobile Menu Items */}
-        <ul className="flex flex-col items-center space-y-6">
+        <ul className="flex flex-col items-start space-y-4 mt-8">
           <li><a href="#home" onClick={handleNavClick} className="text-white text-lg hover:text-gray-400">Home</a></li>
           <li><a href="#skills" onClick={handleNavClick} className="text-white text-lg hover:text-gray-400">Skills</a></li>
           <li><a href="#services" onClick={handleNavClick} className="text-white text-lg hover:text-gray-400">Services</a></li>
