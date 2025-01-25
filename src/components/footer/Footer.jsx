@@ -40,7 +40,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold mb-6 border-b-2 border-white pb-2">Connect</h3>
             <div className="flex space-x-6">
               <a 
-                href="https://www.linkedin.com/in/mugabe-prince-2b377621b" 
+                href="https://www.linkedin.com/in/mugabe-prince-2b377621b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="hover:text-sky-200 transition-colors"
