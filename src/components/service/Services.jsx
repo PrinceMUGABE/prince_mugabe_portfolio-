@@ -1,12 +1,9 @@
 import React from "react";
 import { 
   FaCode, 
-  FaServer, 
   FaDatabase, 
   FaMobile, 
   FaCloudUploadAlt, 
-  FaChartLine,
-  FaTools,
   FaBug,
   FaLaptopCode
 } from "react-icons/fa";

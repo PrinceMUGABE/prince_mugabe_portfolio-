@@ -40,7 +40,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold mb-6 border-b-2 border-white pb-2">Connect</h3>
             <div className="flex space-x-6">
               <a 
-                href="https://www.linkedin.com/in/your-linkedin" 
+                href="https://www.linkedin.com/in/mugabe-prince-2b377621b" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="hover:text-sky-200 transition-colors"
@@ -48,7 +48,7 @@ const Footer = () => {
                 <FaLinkedin className="text-3xl" />
               </a>
               <a 
-                href="https://github.com/your-github" 
+                href="https://github.com/PrinceMUGABE" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="hover:text-sky-200 transition-colors"
