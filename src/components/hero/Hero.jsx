@@ -1,52 +1,85 @@
 import React from "react";
-import hero from "../../assets/pictures/prince1.PNG";
+import hero from "../../assets/pictures/prince2.PNG";
 
 const Hero = () => {
   return (
     <div
-      className="dark:bg-gray-950 dark:text-white duration-300 min-h-screen flex items-center justify-center"
-      id="home"
+      className="hero-section"
+      style={{
+        backgroundImage: `url(${hero})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height: "100vh", // Make the section take full height of the viewport
+        position: "relative", // To position content above the image
+      }}
     >
-      <div className="container w-full max-w-screen-xl flex flex-col sm:flex-row items-center justify-between px-4 sm:px-8">
-        {/* Image section */}
-        <div
-          data-aos="zoom-in"
-          className="relative sm:order-1 flex-1 sm:ml-6 order-1"
-        >
-          <img
-            src={hero}
-            alt="Hero"
-            className="mt-8 w-full max-w-[250px] sm:max-w-[400px] md:max-w-[450px] xl:max-w-[300px] max-h-[400px] mx-auto"
-          />
-        </div>
+      {/* Background Image Overlay */}
+      <div
+        className="background-overlay"
+        style={{
+          position: "absolute",
+          top: "12",
+          left: "0",
+          width: "100%",
+          height: "100%",
+          backgroundColor: "rgba(0, 0, 0, 0.4)", // Black overlay with opacity
+        }}
+      ></div>
 
+      {/* Text Section */}
+      <div
+        className="text-section"
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          color: "#fff", // White text
+          textAlign: "center",
+          zIndex: "2", // Make sure text is on top
+        }}
+      >
+       
         {/* Text section */}
-        <div className="space-y-5 text-center sm:text-left sm:order-2 flex-1">
+        <div className="space-y-5 text-center sm:text-left flex-1">
           <h1
             data-aos="fade-up"
-            className="text-4xl sm:text-4xl font-semibold"
+            className="text-4xl sm:text-5xl font-bold text-white dark:text-white"
             style={{ lineHeight: 1.2 }}
           >
-            <span className="text-blue-800">Full-Stack Developer</span>
+            Prince Mugabe
+            <span className="block text-2xl sm:text-3xl text-white mt-2">
+              Full-Stack Developer | ML & AI Specialist
+            </span>
           </h1>
-          <p data-aos="fade-up" data-aos-delay="300">
-            A software developer for ML and AI systems with hard-working,
-            critical thinking, decision-making, time management, flexibility,
-            and adaptability skills.
-          </p>
-
-          <p data-aos="fade-up" data-aos-delay="300">
-            A software developer for ML and AI systems with hard-working,
-            critical thinking, decision-making, time management, flexibility,
-            and adaptability skills.
-          </p>
           
-          <p data-aos="fade-up" data-aos-delay="300">
-            A software developer for ML and AI systems with hard-working,
-            critical thinking, decision-making, time management, flexibility,
-            and adaptability skills.
-          </p>
+          <div className="space-y-4 text-white dark:text-gray-300">
+            <p data-aos="fade-up" data-aos-delay="300">
+              Specialized in developing innovative software solutions with expertise in Full-Stack Development, Machine Learning, and Artificial Intelligence technologies.
+            </p>
+            
+            <p data-aos="fade-up" data-aos-delay="400">
+              Proficient in end-to-end software development lifecycle, from requirement analysis and design to implementation, testing, and deployment of complex ML and AI systems.
+            </p>
+          </div>
+
+          <div className="flex space-x-4 justify-center sm:justify-start mt-6">
+            <a 
+              href="#projects" 
+              className="bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors"
+            >
+              View Projects
+            </a>
+            <a 
+              href="#footer" 
+              className="border border-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors"
+            >
+              Contact Me
+            </a>
+          </div>
         </div>
+
+        
       </div>
     </div>
   );

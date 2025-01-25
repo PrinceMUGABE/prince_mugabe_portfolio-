@@ -9,26 +9,31 @@ import About from "./about/About.jsx";
 import Contact from "./contact/Contact.jsx";
 import Projects from "./project/Projects.jsx"
 import Skills from "./skill/Skills.jsx"
+import WhatsAppButton from "./WhatsAppButton.jsx";
+
 
 
 const MainLayout = () => {
+  const whatsappNumber = "+250788457408";
+
+
   return (
     <>
       <Navbar />
+      <br />
+      <br />
+      <br />
+  
+      
       <Hero />
-        <br />
-      <About />
-      <br />
+    
       <Skills />
-      <br />
-      <Services />
-      <br />
+      {/* <Services /> */}
       <Projects />
-      <br />
-      <Contact />
-      <br />
-      <br />
       <Footer />
+
+       {/* WhatsApp Button */}
+       <WhatsAppButton phoneNumber={whatsappNumber} />
     </>
   );
 };

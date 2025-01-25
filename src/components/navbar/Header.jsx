@@ -4,7 +4,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full flex justify-between items-center p-4 bg-gray-800 text-white z-50">
+    <header className="fixed top-0 left-0 w-full flex justify-between items-center p-4 bg-blue-700 to-sky-900 text-white z-50 mb-32">
       {/* Logo Section */}
       <div className="logo">
         <h1 className="text-xl font-bold">MUGABE</h1>
@@ -36,7 +36,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-full h-screen bg-gray-900 bg-opacity-95 flex flex-col justify-center items-center transition-transform duration-300 ${
+        className={`fixed top-0 left-0 w-full h-screen bg-blue-700 to-sky-900 bg-opacity-95 flex flex-col justify-center items-center transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } z-40`}
       >
