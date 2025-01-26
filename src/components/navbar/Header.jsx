@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Header = () => {
+const Header = ({ openProfessionalJourney }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleNavClick = () => {
@@ -19,10 +19,12 @@ const Header = () => {
       <nav className="hidden md:flex space-x-6">
         <ul className="flex space-x-6">
           <li><a href="#home" className="hover:text-gray-400">Home</a></li>
+          <li><a href="#footer" className="hover:text-gray-400">Contact</a></li>
           <li><a href="#skills" className="hover:text-gray-400">Skills</a></li>
           <li><a href="#services" className="hover:text-gray-400">Services</a></li>
           <li><a href="#projects" className="hover:text-gray-400">Projects</a></li>
-          <li><a href="#footer" className="hover:text-gray-400">Contact</a></li>
+          <li><a href="#certificates" className="hover:text-gray-400">Certificates</a></li>
+          <li><a href="#blog" onClick={openProfessionalJourney} className="hover:text-gray-400">Blog</a></li>
         </ul>
       </nav>
 
@@ -55,10 +57,15 @@ const Header = () => {
         {/* Mobile Menu Items */}
         <ul className="flex flex-col items-start space-y-4 mt-8">
           <li><a href="#home" onClick={handleNavClick} className="text-white text-lg hover:text-gray-400">Home</a></li>
+          <li><a href="#footer" onClick={handleNavClick} className="text-white text-lg hover:text-gray-400">Contact</a></li>
           <li><a href="#skills" onClick={handleNavClick} className="text-white text-lg hover:text-gray-400">Skills</a></li>
           <li><a href="#services" onClick={handleNavClick} className="text-white text-lg hover:text-gray-400">Services</a></li>
           <li><a href="#projects" onClick={handleNavClick} className="text-white text-lg hover:text-gray-400">Projects</a></li>
-          <li><a href="#footer" onClick={handleNavClick} className="text-white text-lg hover:text-gray-400">Contact</a></li>
+          <li><a href="#certificates" onClick={handleNavClick} className="text-white text-lg hover:text-gray-400">Certificates</a></li>
+          <li><a href="#blog" onClick={() => {
+            handleNavClick();
+            openProfessionalJourney();
+          }} className="text-white text-lg hover:text-gray-400">Blog</a></li>
         </ul>
       </div>
     </header>

@@ -5,39 +5,108 @@ const projectsData = [
   {
     title: "Disaster Guard App",
     description: "Full-stack web application using React, Django, and machine learning algorithms to predict disaster trends with real-time data visualization.",
-    githubLink: "https://github.com/PrinceMUGABE/StockPredictionML",
+    githubLink: "https://github.com/PrinceMUGABE/disaster-guard-management-system",
     technologies: ["React", "Django", "Machine Learning", "TensorFlow"]
   },
   {
     title: "Health Insurance Fraud Detection System",
     description: "Developed a machine learning model for medical image classification using deep learning techniques, with a focus on early disease detection.",
-    githubLink: "https://github.com/PrinceMUGABE/MedicalImageClassification",
+    githubLink: "https://github.com/PrinceMUGABE/Healthy_insurance_fraud_detection_server",
     technologies: ["Python", "TensorFlow", "Keras", "Convolutional Neural Networks"]
   },
   {
     title: "Agricultural Water Use Efficiency Platform",
     description: "Developed a machine learning model for predicting best crop that can fit a specific location based on soil type and weather condition. The model suggests water requirements and irrigation strategies.",
-    githubLink: "https://github.com/PrinceMUGABE/RealTimeChatApp",
+    githubLink: "https://github.com/PrinceMUGABE/Agricultural-Water-Use-Efficiency-Platform",
     technologies: ["React", "Node.js", "Socket.IO", "MongoDB"]
   },
   {
-    title: "Stock Prediction ML",
-    description: "Machine learning application for predicting stock market trends using advanced predictive algorithms and data analysis techniques.",
-    githubLink: "https://github.com/PrinceMUGABE/StockPredictionML",
-    technologies: ["Python", "Machine Learning", "Pandas", "Scikit-learn"]
+    title: "Policy Link Rwanda",
+    description: "A Django and React JS combination project collected all government and non-government organizations together for easy access and check for their policies, terms and conditions",
+    githubLink: "https://github.com/PrinceMUGABE/Policy_Link_Rwanda_Client_Project_with_Django",
+    technologies: ["Python", "React Js", "MYSQL"]
   },
   {
-    title: "Real-Time Chat Application",
-    description: "Scalable real-time chat application with user authentication, message encryption, and instant messaging capabilities.",
-    githubLink: "https://github.com/PrinceMUGABE/RealTimeChatApp",
-    technologies: ["React", "Node.js", "Socket.IO", "Express"]
+    title: "Rwanda Revenue Authority (RRA) Report Management System",
+    description: "Comprehensive web application to help RRA employees generate and submit reports of their everyday activities according to tax collection and implementation of RRA policies in all business sectors as well as any other services that pay taxes.",
+    githubLink: "https://github.com/PrinceMUGABE/Rwanda-Revenue-Authority-Report-Management-System",
+    technologies: ["React", "Node.js", "Socket.IO", "Express", "Postgres"]
   },
   {
-    title: "E-commerce Analytics Platform",
-    description: "Comprehensive analytics dashboard for e-commerce businesses, providing insights on sales, customer behavior, and product performance.",
-    githubLink: "https://github.com/PrinceMUGABE/EcommerceAnalytics",
-    technologies: ["React", "D3.js", "MongoDB", "Express"]
-  }
+    title: "Quiz App",
+    description: "Dynamic application for web and mobile devices for course management. The app can work and web application and mobile app in help of flutter framework of dart programming language",
+    githubLink: "https://github.com/PrinceMUGABE/MobileQuizAppWithFlutterAndSpringboot",
+    technologies: ["Springboot", "Flutter", "MYSQL"]
+  },
+  {
+    title: "Calculator",
+    description: "Mobile application for both Android and Ios devices for scientific calculator ",
+    githubLink: "https://github.com/PrinceMUGABE/Flutter-Calculator-Mobile-app",
+    technologies: ["Dart", "CMake", "Swift", "C++", "HTML"]
+  },
+  {
+    title: "Diabet Prediction System",
+    description: "A comprehensive web application to predict diabetic patients based of the signs",
+    githubLink: "https://github.com/PrinceMUGABE/Diabete-Prediction-system-with-python",
+    technologies: ["Jupyter Notebook", "Python", "HTML"]
+  },
+
+  {
+    title: "PCOS-Detection-with-Django ",
+    description: "Machine learning project developed under python to dect a PCOS and user interface with Django",
+    githubLink: "https://github.com/PrinceMUGABE/PCOS-Detection-with-Django",
+    technologies: ["Jupyter Notebook", "Python", "HTML", "Css"]
+  },
+
+  {
+    title: "Malaria Prediction",
+    description: "python malaria system prediction with machine learning to predict whether a particular person has a malaria disease according to provided informatiom",
+    githubLink: "https://github.com/PrinceMUGABE/MalariaPrediction",
+    technologies: ["Jupyter Notebook", "Python", "HTML", "Css"]
+  },
+
+
+  {
+    title: "Riddle Challenge App",
+    description: "Asp.net core project where user answers the riddles challenges and the system marks over 10. Therefore user is able to view the certificate and can print it",
+    githubLink: "https://github.com/PrinceMUGABE/Riddles-Challenging-system-with-C-",
+    technologies: ["C#", "HTML", "JavaScript", "Css", "SQL"]
+  },
+
+  {
+    title: "Product Management SYstem",
+    description: "web technology system for crud operation, search and sending email are additionals",
+    githubLink: "https://github.com/PrinceMUGABE/SpringbootProductManagementSystem",
+    technologies: ["Java", "HTML", "JavaScript", "Css"]
+  },
+
+  {
+    title: "E-Commerce",
+    description: "Full-stark web applicaion developed in C# programming language and asp.net framework for e-commerce",
+    githubLink: "https://github.com/PrinceMUGABE/eCommerceProject",
+    technologies: ["C#", "HTML", "JavaScript", "Css", "SQL"]
+  },
+
+  {
+    title: "News Prediction System",
+    description: "Developed a predictive web application that analyze news and predict what kind of article such news is categorized at. For example Sport, Business, Religious and so on.",
+    githubLink: "https://github.com/PrinceMUGABE/news-prediction",
+    technologies: ["Jupyter Notebook", "Python", "HTML", "JavaScript", "Css"]
+  },
+
+  {
+    title: "Volcano Express Expense Pro",
+    description: "A comprehensive responsive and dynamic web application for volcano express co ltd that help drivers to report the expenses taken place along side the trips. The system analyze the uploaded receipts using optical character recognition (OCR) library, neural language processing (NLP) and facial recognition to analyze recorded video.",
+    githubLink: "https://github.com/PrinceMUGABE/Volcan-Expense-Pro-Backend",
+    technologies: ["Python", "OCR", "Powershell", "SQL", "Tailwind css", "React"]
+  },
+
+  {
+    title: "Go-GO App",
+    description: "Developed a backend system that generates RESTFUL APIs for tracking orders, payments, freelancers who must derivers orders to their owners, logistic companies that hold freelancers in their management.",
+    githubLink: "https://github.com/PrinceMUGABE/gogo_app",
+    technologies: ["Python", "Postgresql", "Django"]
+  },
 ];
 
 const Projects = () => {
