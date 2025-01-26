@@ -7,6 +7,7 @@ import Skills from "./skill/Skills.jsx"
 import WhatsAppButton from "./WhatsAppButton.jsx";
 import Certificates from "./certifaction/Certificates.jsx";
 import ProfessionalJourneyModal from "./blog/Blog.jsx";
+import Projects from "./project/Projects.jsx"
 
 const MainLayout = () => {
   const [isProfessionalJourneyOpen, setIsProfessionalJourneyOpen] = useState(false);
@@ -31,6 +32,8 @@ const MainLayout = () => {
       <Skills />
       <Services />
       <Certificates />
+      <Projects />
+  
       <Footer />
 
       {/* WhatsApp Button */}
