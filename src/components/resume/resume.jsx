@@ -200,7 +200,7 @@ export default function Resume() {
               </span>
             </div>
             <ul className="list-disc ml-4 space-y-0.5 text-xs text-gray-700 leading-snug">
-              <li>Conducted market research to identify potential sales opportunities and target markets</li> <br /><br />
+              <li className="mb-4">Conducted market research to identify potential sales opportunities and target markets</li>
               <li>Analyzed market trends, competitor activities, and consumer preferences to inform business strategies</li>
               <li>Developed and executed sales plans to achieve company objectives</li>
             </ul>
