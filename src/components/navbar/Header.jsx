@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Header = ({ openProfessionalJourney }) => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleNavClick = () => {
     setIsOpen(false);
@@ -13,10 +14,14 @@ const Header = ({ openProfessionalJourney }) => {
     navigate('/resume');
   };
 
+  const isActive = (path) => {
+    return location.pathname === path ? "text-yellow-300 font-semibold" : "hover:text-gray-400";
+  };
+
   return (
-    <header className="fixed top-0 left-0 w-full flex justify-between items-center p-4 bg-gradient-to-r from-sky-700 to-sky-900 text-white z-50 mb-32">
+    <header className="fixed top-0 left-0 w-full flex justify-between items-center p-4 bg-gradient-to-r from-sky-700 to-sky-900 text-white z-50">
       {/* Logo Section */}
-      <div className="logo">
+      <div className="logo cursor-pointer" onClick={() => navigate('/')}>
         <h1 className="text-xl font-bold">MUGABE</h1>
         <p className="text-sm">Software Engineer</p>
       </div>
@@ -24,7 +29,7 @@ const Header = ({ openProfessionalJourney }) => {
       {/* Navbar for larger screens */}
       <nav className="hidden md:flex space-x-6">
         <ul className="flex space-x-6">
-          <li><a href="#home" className="hover:text-gray-400">Home</a></li>
+          <li><a href="#home" className={`${isActive('/')} hover:text-gray-400`}>Home</a></li>
           <li><a href="#footer" className="hover:text-gray-400">Contact</a></li>
           <li><a href="#skills" className="hover:text-gray-400">Skills</a></li>
           <li><a href="#services" className="hover:text-gray-400">Services</a></li>
@@ -32,7 +37,10 @@ const Header = ({ openProfessionalJourney }) => {
           <li><a href="#certificates" className="hover:text-gray-400">Certificates</a></li>
           <li><a href="#blog" onClick={openProfessionalJourney} className="hover:text-gray-400">Blog</a></li>
           <li>
-            <button onClick={handleResumeNavigate} className="hover:text-gray-400">
+            <button 
+              onClick={handleResumeNavigate} 
+              className={`${isActive('/resume')} hover:text-gray-400`}
+            >
               Resume
             </button>
           </li>
@@ -67,7 +75,7 @@ const Header = ({ openProfessionalJourney }) => {
 
         {/* Mobile Menu Items */}
         <ul className="flex flex-col items-start space-y-4 mt-8">
-          <li><a href="#home" onClick={handleNavClick} className="text-white text-lg hover:text-gray-400">Home</a></li>
+          <li><a href="#home" onClick={handleNavClick} className={`text-white text-lg ${isActive('/')}`}>Home</a></li>
           <li><a href="#footer" onClick={handleNavClick} className="text-white text-lg hover:text-gray-400">Contact</a></li>
           <li><a href="#skills" onClick={handleNavClick} className="text-white text-lg hover:text-gray-400">Skills</a></li>
           <li><a href="#services" onClick={handleNavClick} className="text-white text-lg hover:text-gray-400">Services</a></li>
@@ -81,7 +89,7 @@ const Header = ({ openProfessionalJourney }) => {
             <button onClick={() => {
               handleNavClick();
               handleResumeNavigate();
-            }} className="text-white text-lg hover:text-gray-400">
+            }} className={`text-white text-lg ${isActive('/resume')}`}>
               Resume
             </button>
           </li>

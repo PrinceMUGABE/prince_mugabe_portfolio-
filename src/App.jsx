@@ -3,14 +3,10 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
-
 // Imports
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./components/Main_Layout";
-import Resume from "./components/resume/resume";
-
-
+import Resume from "./components/resume/frontend_developer";
 
 const App = () => {
   useEffect(() => {
@@ -31,7 +27,6 @@ const App = () => {
           {/* Home view */}
           <Route path="/" element={<MainLayout />} />
           <Route path="/resume" element={<Resume />} />
-          
         </Routes>
       </BrowserRouter>
     </div>
