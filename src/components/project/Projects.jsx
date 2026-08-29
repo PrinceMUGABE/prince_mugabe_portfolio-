@@ -76,7 +76,7 @@ const otherProjects = [
 
 const LiveDemoButton = () => (
   <a className="project-demo-button" href="#contact" aria-label="Add a live demo link in the contact section">
-    Add live link <FaArrowUpRightFromSquare />
+    Add live link https://smart-logistic-management-system-one.vercel.app/ <FaArrowUpRightFromSquare />
   </a>
 );
 
