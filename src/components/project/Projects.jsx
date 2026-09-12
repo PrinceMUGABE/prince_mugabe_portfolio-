@@ -35,6 +35,16 @@ const featuredProjects = [
       { label: "Backend", url: "https://github.com/PrinceMUGABE/Health-Connect-management-System-Backend" },
     ],
   },
+  {
+    number: "04",
+    title: "Ishuri AI School Management",
+    description: "Student records, grade management, analytics, and communication for schools.",
+    technologies: ["React", "JavaScript", "AI", "MySQL"],
+    liveDemo: "https://ishuri-ai-powered-school-management.vercel.app/",
+    githubLinks: [
+      { label: "Source", url: "https://github.com/PrinceMUGABE/ishuri-A[...]" },
+    ],
+  },
 ];
 
 const otherProjects = [
@@ -52,7 +62,6 @@ const otherProjects = [
   ["Infrastructure Plan Management", "Infrastructure project tracking, budget management, and timeline visualization.", ["React", "JavaScript", "MySQL"], ["https://github.com/PrinceMUGABE/infrapla[...]"]],
   ["Real-Time Agricultural Intelligence", "IoT data streaming, agricultural analytics, and operational alerts.", ["React", "JavaScript", "IoT", "MySQL"], ["https://github.com/PrinceMUGABE/Real-tim[...]"]],
   ["Security Awareness Platform", "Cybersecurity training, assessments, quizzes, and compliance progress tracking.", ["React", "Python", "MySQL"], ["https://github.com/PrinceMUGABE/security-awaren[...]"]],
-  ["Ishuri AI School Management", "Student records, grade management, analytics, and communication for schools.", ["React", "JavaScript", "AI", "MySQL"], ["https://github.com/PrinceMUGABE/ishuri-A[...]"]],
   ["Smart Sunflower Production & Marketing", "Production tracking, market analysis, and sales management across the agricultural supply chain.", ["React", "Python", "Machine Learning", "MySQL"], ["[...]"]],
   ["Advent Connect", "Community profiles, messaging, and event management in a modern engagement platform.", ["React", "Vite", "JavaScript"], ["https://github.com/PrinceMUGABE/advent-connect-front[...]"]],
   ["Tenant Management System", "Lease management, payment tracking, and maintenance requests for property operations.", ["Django", "Python", "MySQL"], ["https://github.com/PrinceMUGABE/Tenant-Back[...]"]],
