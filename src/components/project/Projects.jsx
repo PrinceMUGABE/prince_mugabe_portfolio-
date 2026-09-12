@@ -7,7 +7,7 @@ const featuredProjects = [
     title: "Disaster Guard",
     description: "A full-stack public-safety platform that combines disaster trend prediction with real-time alerts and data visualization, helping people understand risk signals and respond to cha[...]",
     technologies: ["React", "Django", "Python", "MySQL", "Machine Learning"],
-    liveDemo: null,
+    liveDemo: "https://disaster-guard-system.vercel.app/",
     githubLinks: [
       { label: "Frontend", url: "https://github.com/PrinceMUGABE/disaster-guard-frontend-with-react.js" },
       { label: "Backend", url: "https://github.com/PrinceMUGABE/disaster-guard-backend-with-django" },
@@ -29,7 +29,7 @@ const featuredProjects = [
     title: "Health Connect Management System",
     description: "A healthcare facility management platform connecting patient records, appointment scheduling, and medical workflows in one accessible system.",
     technologies: ["React", "Django", "Python", "MySQL", "Health Tech"],
-    liveDemo: null,
+    liveDemo: "https://health-connect-management-system.vercel.app/",
     githubLinks: [
       { label: "Frontend", url: "https://github.com/PrinceMUGABE/HealthConnect-Management-System-Frontend" },
       { label: "Backend", url: "https://github.com/PrinceMUGABE/Health-Connect-management-System-Backend" },
