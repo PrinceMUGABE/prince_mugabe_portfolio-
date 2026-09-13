@@ -150,7 +150,7 @@ const Projects = () => (
         <span>{otherProjects.length} additional projects</span>
       </div>
       <div className="project-archive">
-        {otherProjects.map(([title, description, technologies, githubLinks]) => (
+        {otherProjects.map(([title, description, technologies, githubLinks = []]) => (
           <article className="archive-project" key={title} data-aos="fade-up">
             <div>
               <h3>{title}</h3>
