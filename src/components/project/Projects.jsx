@@ -80,6 +80,8 @@ const otherProjects = [
   ["E-Commerce Platform", "Product catalog, shopping cart, payments, and order management.", ["ASP.NET Core", "C#", "MySQL"], ["https://github.com/AganzeFelicite/e-commerce_platform", "https://git[...]"]],
   ["Riddle Challenge", "A gamified riddle experience with scoring and printable certificate generation.", ["ASP.NET Core", "C#", "MySQL"], ["https://github.com/PrinceMUGABE/Riddles-Challenging-sys[...]"]],
   ["Health & Disease Prediction", "Machine-learning projects for malaria, diabetes, PCOS, image classification, and movie-script genre prediction.", ["Python", "Django", "Jupyter", "Machine Learni[...]"], []],
+  ["Health & Disease Prediction", "Machine-learning projects for malaria, diabetes, PCOS, image classification, and movie-script genre prediction.", ["Python", "Django", "Jupyter", "Machine Learni[...]"]],
+
   ["BigData Analytics Journey", "Big data coursework and projects covering processing, statistics, Spark, and Hadoop.", ["Python", "Jupyter", "Apache Spark", "Hadoop"], ["https://github.com/Prince[...]"]],
   ["Data Analytics Bootcamp", "Practical analytics training and real-world datasets across Excel, Python, SQL, and Tableau.", ["Excel", "Python", "SQL", "Tableau"], ["https://github.com/PrinceMUGA[...]"]],
   ["Flutter Mobile Projects", "A calculator, household employee management app, and mobile programming assignments.", ["Flutter", "Dart", "Mobile"], ["https://github.com/PrinceMUGABE/Flutter-Calcu[...]"]],
